@@ -1,0 +1,29 @@
+body
+{
+    background-color: #263238;
+    color: white;
+}
+
+a
+{
+    color: white;
+}
+
+a:hover
+{
+    color: grey;
+}
+
+.card
+{
+    background-color: #464f54;
+    margin: 10px;
+}
+
+.card-body:hover
+{
+    background-color: #3a464e;
+    transition-duration: 500ms;
+}
+
+
