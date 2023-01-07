@@ -1,3 +1,33 @@
-.nav-pills > li > a.active {
-    background-color: rgb(22, 22, 22) !important;
+html, body {
+    height: 100%;
+}
+
+
+.nav > li > a.active {
+    color: white !important;
+    font-weight: initial;
+    font-size: x-large
+}
+
+.nav > li > a{
+    color: rgb(171, 171, 171) !important;
+    font-weight: light;
+}
+
+a {
+    transition: 300ms ease-out !important;
+}
+
+a:hover {
+    font-size: larger;
+}
+
+.link {
+    font-size: large;
+    transition: 500ms ease-out !important;
+}
+
+.link:hover {
+    font-size: larger;
+
 }
