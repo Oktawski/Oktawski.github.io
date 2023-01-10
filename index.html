@@ -15,17 +15,17 @@
 </head>
 <body style="min-width: 200px;">
     <div class="jumbotron jumbotron-fluid pt-3" style="background-color: #000a12">
-        <div class="row pl-md-5 container-fluid">
-            <div class="col">
+        <div class="row pl-md-5 container-fluid d-none d-md-inline-flex">
+            <div class="col-12 col-md-6">
                 <h1 class="display-4">Oktawian Perlowski</h1>
                 <p class="lead ">Software engineer working with anything related to .Net</p>
                 <p class="text-secondary">.Net / Entity Framework / Rest API / Blazor / MVC / xUnit</p>
                 <p class="text-secondary">React / Material UI / Bootstrap</p>
                 <p class="text-secondary">Azure</p>
             </div>
-            <div class="col d-none d-lg-block justify-content-end p-3">
+            <div class="col-12 col-md-6 pt-3 pb-2">
                 <div class="row">
-                    <div class="col-md-7 ml-auto">
+                    <div class="col-6 col-md-12 text-center">
                         <a href="https://github.com/Oktawski" target="_blank" style="text-decoration: none;">
                             <div class="link">
                                 <i class="fa-brands fa-github fa-3x"></i>
@@ -33,10 +33,7 @@
                             </div>
                         </a>
                     </div>
-                </div>
-                
-                <div class="row">
-                    <div class="col-md-7 ml-auto">
+                    <div class="col-6 col-md-12 text-center">
                         <a href="https://www.linkedin.com/in/o-perlowski/" target="_blank" style="text-decoration: none;">
                             <div class="link">
                                 <i class="fa-brands fa-linkedin-in fa-3x mr-1"></i>
@@ -47,11 +44,32 @@
                 </div>
             </div>
         </div>
+
+        <div class="row container-fluid pl-3 d-inline-flex d-md-none">
+            <div class="col-8">
+                <h1 class="display-4">Oktawian Perlowski</h1>
+                <p class="lead">.Net Software Engineer</p>
+            </div>
+            <div class="col">
+                <a href="https://github.com/Oktawski" target="_blank" style="text-decoration: none;">
+                    <div class="link">
+                        <i class="fa-brands fa-github fa-3x"></i>
+                        <span>Oktawski</span>
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/o-perlowski/" target="_blank" style="text-decoration: none;">
+                    <div class="link">
+                        <i class="fa-brands fa-linkedin-in fa-3x mr-1"></i>
+                        <span>o-perlowski</span>
+                    </div>
+                </a>
+            </div>
+        </div>
     </div>
 
     <ul class="nav justify-content-center" id="tabs" role="tablist">
         <li class="nav-item">
-            <a class="nav-link active" 
+            <a class="nav-link link" 
                 id="about-tab" 
                 data-toggle="tab" 
                 href="#about" 
@@ -63,7 +81,7 @@
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" 
+            <a class="nav-link active link" 
                 id="projects-tab" 
                 data-toggle="tab" 
                 href="#projects" 
@@ -75,7 +93,7 @@
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" 
+            <a class="nav-link link" 
                 id="contact-tab" 
                 data-toggle="tab" 
                 href="#contact" 
@@ -88,15 +106,67 @@
         </li>
     </ul>
         
-    <div class="p-5 tab-content">
-        <div class="tab-pane active" id="about" role="tabpanel" aria-labelledby="about-tab">
+    <div class="tab-content">
+        <div class="tab-pane fade" id="about" role="tabpanel" aria-labelledby="about-tab">
             <h1>
                 This will be section about myself, my motivation, my favorite languages and technologies
             </h1>
         </div>
-        <div class="tab-pane fade" id="projects" role="tabpanel" aria-labelledby="projects-tab" aria->
-            <h1>Here you will find my personal pojects</h1>
+
+        <div class="tab-pane active" id="projects" role="tabpanel" aria-labelledby="projects-tab">
+            <div class="row ml-1 mr-1 flex-grow-1">
+                <div class="col-12 col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Password Manager</h5>
+                            <p class="card-text">
+                                Dummy description
+                            </p>
+                            <a class="text-decoration-none" href="https://github.com/Oktawski/password-manager-dotnet-react" target="_blank">
+                                <i class="bi bi-github">Fullstack</i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Home Manager</h5>
+                            <p class="card-text">
+                                Another Dummy Desciption
+                            </p>
+                            <a class="text-decoration-none me-2" href="https://github.com/Oktawski/home-api-django" target="_blank">
+                                <i class="bi bi-github">Backend</i>
+                            </a>
+                            <a class="text-decoration-none" href="https://github.com/Oktawski/home-client-react" target="_blank">
+                                <i class="bi bi-github">Frontend</i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">SmartHome</h5>
+                            <p class="card-text">
+                                Description will be here
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a class="text-decoration-none me-2" href="https://github.com/Oktawski/smarthome-api" target="_blank">
+                                <i class="bi bi-github">Backend</i>
+                            </a>
+                            <a class="text-decoration-none" href="https://github.com/Oktawski/smarthome-android" target="_blank">
+                                <i class="bi bi-github">Android</i>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+
+
         <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
             <h1>
                 I don't know if this will be contact section, you can find the contact at the top of this website

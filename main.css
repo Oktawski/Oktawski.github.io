@@ -14,11 +14,11 @@ html, body {
     font-weight: light;
 }
 
-a {
+.link > a {
     transition: 300ms ease-out !important;
 }
 
-a:hover {
+.link > a:hover {
     font-size: larger;
 }
 
